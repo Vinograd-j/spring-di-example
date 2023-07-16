@@ -1,13 +1,13 @@
 package net.vinograd.manual;
 
-import net.vinograd.manual.clinic.local_spring.BeanConfig;
-import net.vinograd.manual.clinic.repository.AppointmentRepository;
-import net.vinograd.manual.clinic.repository.DoctorRepository;
-import net.vinograd.manual.clinic.repository.PatientRepository;
-import net.vinograd.manual.clinic.service.DoctorService;
-import net.vinograd.manual.clinic.service.ReceptionService;
-import net.vinograd.manual.model.Doctor;
-import net.vinograd.manual.model.Patient;
+import net.vinograd.manual.clinic.local_variants.local_spring.BeanConfig;
+import net.vinograd.manual.clinic.local_variants.repository.AppointmentRepository;
+import net.vinograd.manual.clinic.local_variants.repository.DoctorRepository;
+import net.vinograd.manual.clinic.local_variants.repository.PatientRepository;
+import net.vinograd.manual.clinic.local_variants.service.DoctorService;
+import net.vinograd.manual.clinic.local_variants.service.ReceptionService;
+import net.vinograd.manual.clinic.local_variants.model.Doctor;
+import net.vinograd.manual.clinic.local_variants.model.Patient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
