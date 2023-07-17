@@ -5,11 +5,13 @@ import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 import net.vinograd.manual.clinic.database_variants.model.Doctor;
 import net.vinograd.manual.clinic.database_variants.spring_hibernate.repository.DoctorRepository;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Component
 @Repository
 public class HibernateDoctorRepository implements DoctorRepository {
 
@@ -28,7 +30,6 @@ public class HibernateDoctorRepository implements DoctorRepository {
 
     @Override
     public List<Doctor> findByName(String name) {
-
         TypedQuery<Doctor> query = entityManager.createQuery("SELECT doctor FROM Doctor WHERE doctor.first_name LIKE : %name% OR doctor.last_name LIKE : %name%", Doctor.class);
         query.setParameter("name", name);
 

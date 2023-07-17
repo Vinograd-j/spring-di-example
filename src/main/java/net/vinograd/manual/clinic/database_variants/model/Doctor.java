@@ -6,6 +6,7 @@ import lombok.Getter;
 @Entity
 public class Doctor {
 
+    @Getter
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
