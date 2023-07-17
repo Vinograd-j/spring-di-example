@@ -1,8 +1,8 @@
-package net.vinograd.manual.clinic.database_variants;
+package net.vinograd.manual.clinic.local_variants;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan
-public class DatabaseBeanConfig { }
+public class BeanConfig { }

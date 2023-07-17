@@ -1,6 +1,6 @@
 package net.vinograd.manual;
 
-import net.vinograd.manual.clinic.local_variants.local_spring.BeanConfig;
+import net.vinograd.manual.clinic.local_variants.BeanConfig;
 import net.vinograd.manual.clinic.local_variants.repository.AppointmentRepository;
 import net.vinograd.manual.clinic.local_variants.repository.DoctorRepository;
 import net.vinograd.manual.clinic.local_variants.repository.PatientRepository;
@@ -54,6 +54,7 @@ public class SpringLearningApplication {
         prepare();
         simulate();
     }
+
 
     private void prepare() {
 
